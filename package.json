@@ -9,6 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^4.2.6",
+    "@mantine/hooks": "^4.2.6",
+    "@mantine/next": "^4.2.6",
+    "@mantine/notifications": "^4.2.6",
+    "@reduxjs/toolkit": "^1.8.1",
+    "firebase": "^9.8.1",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
