@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cormorant: ["Cormorant Garamond", "serif"],
+        roboto: ["Roboto", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
