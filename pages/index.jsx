@@ -1,6 +1,5 @@
-
-import Head from 'next/head'
-import Navbar from './components/Navbar'
+import Head from "next/head";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
@@ -15,24 +14,18 @@ export default function Home() {
         <Navbar />
 
         <div>
-          <h1>
-            Heading
-          </h1>
+          <h1>Heading</h1>
           <button>a button</button>
         </div>
 
-        <div>
-          Features
-        </div>
+        <div>Features</div>
 
-        <div>
-          Testimonial
-        </div>
+        <div>Testimonial</div>
       </main>
 
       <footer>
         <p>footer</p>
       </footer>
     </div>
-  )
-    }
+  );
+}
