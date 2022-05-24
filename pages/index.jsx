@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import { Stack, Button, Box } from '@mantine/core'
 
+
 export default function Home() {
   return (
     <Stack sx={(theme) => ({ backgroundColor: theme.colors.dark[8] })}>
