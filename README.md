@@ -5,7 +5,7 @@ Tuster is the best platform where you can find tutors near you.
 First, install the packages like this
 
 ```bash
-yarn add
+yarn
 # or
 npm install
 ```

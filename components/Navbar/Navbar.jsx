@@ -1,29 +1,24 @@
-import Link from "next/link";
-
-import { motion } from "framer-motion";
-const NavLink = ({ children, href }) => {
-  return (
-    <motion.li
-      whileHover={{ y: -3 }}
-      className="tracking-wide mx-4 font-roboto font-semibold text-sm"
-    >
-      <Link href={href}>
-        <a>{children}</a>
-      </Link>
-    </motion.li>
-  );
-};
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { toggleNavbar } from "../../context/navbarSlice/navbarSlice";
+import { Burger } from "@mantine/core";
+import NavLink from "./NavLink/NavLink";
 
 const Navbar = () => {
+  const isOpen = useSelector((state) => state.navbar.isOpen);
+  const title = isOpen ? "Close Navigation" : "Open Navigation";
+  const dispatch = useDispatch();
   return (
-    <nav className="flex justify-between px-10 py-3 bg-white">
-      <ul className="flex items-center">
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="/">About</NavLink>
-        <NavLink href="/">Contact</NavLink>
-        <NavLink href="/">Become a tutor</NavLink>
-      </ul>
-
+    <nav className="flex justify-between px-4 md:px-10 py-3 bg-white">
+      <div>
+        <Burger
+          opened={isOpen}
+          onClick={() => {
+            dispatch(toggleNavbar());
+          }}
+          title={title}
+        />
+      </div>
       <ul className="flex items-center">
         <NavLink href="/">Log In</NavLink>
         <NavLink href="/">Log Out</NavLink>
