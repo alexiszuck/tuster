@@ -9,7 +9,7 @@ const Navbar = () => {
   const title = isOpen ? "Close Navigation" : "Open Navigation";
   const dispatch = useDispatch();
   return (
-    <nav className="flex justify-between px-4 md:px-10 py-3 bg-white">
+    <nav className="flex justify-between px-4 md:px-10 py-3 bg-white shadow-sm ">
       <div>
         <Burger
           opened={isOpen}
@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink href="/">Log In</NavLink>
         <NavLink href="/">Log Out</NavLink>
         <li>
-          <button className="text-white bg-blue-500 py-2 px-6 rounded-full hover:bg-blue-600 transition-all font-roboto">
+          <button className="text-white bg-blue-500 py-2 px-6 rounded-xl hover:bg-blue-600 transition-all font-roboto">
             Sign Up
           </button>
         </li>

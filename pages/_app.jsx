@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import { store } from "../context/store";
 import { Provider } from "react-redux";
 import SideNavbar from "../components/SideNavbar/SideNavbar";
+
 const themeOptions = {
   colorScheme: "light",
   fontFamily: "Roboto",
