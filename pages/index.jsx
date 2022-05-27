@@ -1,6 +1,10 @@
-import Head from "next/head";
-import { Stack, Button, Box } from "@mantine/core";
-import Testimonials from "../components/Testimonials/Testimonials";
+
+
+import Head from 'next/head'
+import { Stack, Button, Box } from '@mantine/core'
+import Testimonials from '../components/Testimonials/Testimonials'
+import BottomBar from '../components/BottomBar/BottomBar'
+
 
 export default function Home() {
   return (
@@ -23,9 +27,7 @@ export default function Home() {
         </Stack>
       </main>
       <footer>
-        <Box sx={(theme) => ({ backgroundColor: theme.colors.yellow[5] })}>
-          footer
-        </Box>
+        <BottomBar />
       </footer>
     </Stack>
   );
